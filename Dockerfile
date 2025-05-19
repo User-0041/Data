@@ -10,6 +10,8 @@ RUN apt-get update && apt-get install -y \
     software-properties-common \
     git \
     && rm -rf /var/lib/apt/lists/*
+ARG CACHEBUSTS=1
+ARG CACHEBUS=1
 
 RUN git clone https://github.com/User-0041/Data 
 
